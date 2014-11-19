@@ -28,7 +28,7 @@ docker run --name ouija_data ateam/ouija_data
 if [ $? -eq 1 ]
 then
     printf "\033[31mError creating MySQL application container. Run the following and then try this script again:\033[m\n"
-    printf "\033[1mdocker ps -a -f status=exited |grep \"ateam/ouija_data\"| awk '{print \$1}' |xargs docker rm\033[m\n"
+    printf "\033[1mdocker ps -a -f status=exited |grep \"ouija_data\"| awk '{print \$1}' |xargs docker rm\033[m\n"
     printf "\033[31mExiting\033[m\n"
     exit 1
 fi
