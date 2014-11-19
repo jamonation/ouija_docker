@@ -1,0 +1,8 @@
+*.pyc
+dockerfiles/fig.yml
+
+# ignore virtualenv directories
+bin/**
+include/**
+lib/**
+local/**

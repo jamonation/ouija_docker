@@ -1,0 +1,3 @@
+[submodule "ouija"]
+	path = ouija
+	url = https://github.com/jamonation/ouija.git

@@ -1,0 +1,13 @@
+database:
+  image: ateam/ouija_db
+  volumes_from:
+    - ouija_data
+  expose:
+    - "3306"
+
+ouija:
+  image: ateam/ouija_web
+  ports:
+    - "8080:8157"
+  links:
+    - database
